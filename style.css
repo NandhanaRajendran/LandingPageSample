@@ -49,6 +49,7 @@ header .navbar a{
     margin-left: 3rem;
     font-weight: 500;
     color: var(--secondary-color);
+
 }
 
 header .navbar a:hover{
@@ -63,7 +64,7 @@ header .mode{
     width: 3rem;
     color: #f9f9f9;
     font-size: 1.5rem;
-    background: linear-gradient(orange,green);
+    background: linear-gradient(rgb(138, 68, 2),rgb(17, 83, 17));
     border-radius: 50%;
     cursor: pointer;
 }
@@ -78,4 +79,14 @@ header .mode{
     right: 0;
     bottom: 0;
     width: 100vw;
+}
+.home .content h3{
+    font-size: 2.4rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.home .content p{
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    padding: 1rem 0;
 }
