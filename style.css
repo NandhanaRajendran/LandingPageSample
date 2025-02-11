@@ -24,6 +24,10 @@ html{
 body{
     background-color: var(--primary-color);
 }
+section{
+    min-height: 100vh;
+    padding: 0px 9%;
+}
 
 header{
     position: fixed;
@@ -31,7 +35,7 @@ header{
     left: 0;
     width: 100%;
     background-color: var(--primary-color);
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +72,9 @@ header .mode{
     border-radius: 50%;
     cursor: pointer;
 }
-
+.home{
+    padding: 1rem 9%;
+}
 .home .flag{
     display: flex;
     justify-content: center;
@@ -81,7 +87,8 @@ header .mode{
     width: 100vw;
 }
 .home .content h3{
-    font-size: 2.4rem;
+    
+    font-size: 4.4rem;
     color: var(--secondary-color);
     text-transform: uppercase;
 }
@@ -89,4 +96,15 @@ header .mode{
     font-size: 1.6rem;
     color: var(--secondary-color);
     padding: 1rem 0;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: .8rem 5rem;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    color: #f9f9f9;
+    box-shadow: 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+    color: red;
 }
