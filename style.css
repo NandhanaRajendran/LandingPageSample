@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 *::selection{
-    background-color: brown;
+    background-color: rgb(255, 0, 0);
     color: aliceblue;
 }
 :root{
@@ -26,7 +26,8 @@ body{
 }
 section{
     min-height: 100vh;
-    padding: 0px 9%;
+    padding-top: 17rem;
+    padding-left: 9%;
 }
 
 header{
@@ -68,29 +69,39 @@ header .mode{
     width: 3rem;
     color: #f9f9f9;
     font-size: 1.5rem;
-    background: linear-gradient(rgb(138, 68, 2),rgb(17, 83, 17));
+    background: linear-gradient(rgb(6, 63, 185),rgb(0, 0, 0));
     border-radius: 50%;
     cursor: pointer;
 }
-.home{
-    padding: 1rem 9%;
-}
+
 .home .flag{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.home .flag{
     position: fixed;
     right: 0;
     bottom: 0;
     width: 100vw;
+    height: 60vh;
+    margin-left: 80px;
+    z-index: -1;
+}
+.home .content{
+    margin-top: -80px;
+    width: 50%;
+    float: left;
 }
 .home .content h3{
     
     font-size: 4.4rem;
     color: var(--secondary-color);
     text-transform: uppercase;
+    line-height: 5.3rem;
+}
+.home .content h3 span{
+    font-size: 7rem;
+    color: orange;
+    line-height: 7rem;
 }
 .home .content p{
     font-size: 1.6rem;
@@ -99,12 +110,52 @@ header .mode{
 }
 
 .btn{
+    margin-top: 1rem;
     position: relative;
     display: inline-block;
     padding: .8rem 5rem;
     border-radius: 5rem;
     font-size: 1.7rem;
     color: #f9f9f9;
-    box-shadow: 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
-    color: red;
+    box-shadow: 0.05rem 0.3rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    
+}
+
+.btn span {
+    position: absolute;
+    height: 300%;
+    width: 300%;
+    top: 0;
+    left: 0;
+    background: linear-gradient( orange, green, orange, green);
+    z-index: -1;
+    transition: 0.5s; 
+}
+
+.btn:hover span{
+    top: -100%;
+    left: 0;
+}
+
+
+
+.home .image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.home .image .India{
+    position: absolute;
+    margin-top: 400px;
+    width: 120%;
+}
+.home .image .birthday{
+    position: absolute;
+    width: 95%;
+    top: -80px;
+    left: -70px;  
 }
