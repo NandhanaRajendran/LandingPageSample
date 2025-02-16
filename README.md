@@ -1,3 +1,3 @@
-Hi Three...!
+Hey...!
 
-This is a sample landing page designed to showcase a country’s culture, tourism, and key highlights. Built with HTML, CSS, and JavaScript, it offers a responsive and visually appealing layout.
+This is a landing page designed to celebrate Independence Day.Built using HTML, CSS, and JavaScript, it features a visually appealing design with smooth transitions and dark mode support.
