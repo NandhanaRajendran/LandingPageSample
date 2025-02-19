@@ -7,6 +7,7 @@
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
+    
 }
 *::selection{
     background-color: rgb(255, 0, 0);
@@ -29,7 +30,9 @@
     }
     
     .home .image{
+        width: 50%;
         position: relative;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -38,19 +41,23 @@
     
     
     .home .image .birthday{
-        position: absolute;
-        width: 65%;
-        top: -60px;
-        left: 50px;  
+        
+        position: relative;
+        top: -10em;
+        right: 6em;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        transition: .5s;
     }
     .home .image .India{
         position: absolute;
-        margin-top: 250px;
-        width: 80%;
+        top: -15em;
+        width: 75%;
+        opacity: 0.8;
         transition: .5s;
-        opacity: 0.4;
         z-index: -2;
-                
     }
     
 }
@@ -117,17 +124,18 @@ header .mode{
     cursor: pointer;
 }
 
+
 .home .flag{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     width: 100vw;
     height: 60vh;
     margin-left: 80px;
-    z-index: -1;
+    z-index: -2;
 }
 .home .content{
     margin-top: -80px;
@@ -184,7 +192,9 @@ header .mode{
 
 
 .home .image{
+    width: 50%;
     position: relative;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,15 +203,20 @@ header .mode{
 
 
 .home .image .birthday{
-    position: absolute;
-    width: 65%;
-    top: -60px;
-    left: 50px;  
+    
+    position: relative;
+    top: -12em;
+    right: 6em;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    transition: .5s;
 }
 .home .image .India{
     position: absolute;
-    margin-top: 250px;
-    width: 75%;
+    top: -13em;
+    width: 65%;
     opacity: 0.2;
     transition: .5s;
     z-index: -2;
@@ -249,3 +264,168 @@ header .mode{
     padding: 1rem;
     color: #f9f9f9;
 }
+header .toggle-btn{
+    font-size: 20px;
+    position: relative;
+    top: 0;
+    left: 1.8em;
+    display: none;
+}
+@media (max-width:957px) {
+    .home .image{
+        width: 50%;
+        position: relative;
+        top: 7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+} 
+
+@media (max-width:692px) {
+    header .navbar{
+        padding-right: .4em;
+    }
+    .home .image{
+        width: 50%;
+        position: relative;
+        top: 7em;
+        left: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+    }   
+    .home .image .birthday{
+        position: relative;
+        
+        width: 60%;
+        top: -10em;
+        left: -3rem;
+    }
+}
+
+@media (max-width:596px ){
+    
+   
+    .home .content{
+        
+        width: 50%;
+    }
+    .home .content h3{
+        
+        font-size: 3.5rem;
+        line-height: 4.4rem;
+    }
+    .home .content h3 span {
+        font-size: 6rem;
+        line-height: 6rem;
+        
+    }
+    .home .content p{
+        padding-right: 60px;
+        padding-top: 2em;
+        width: 100vw;
+    }
+
+    .home .image{
+        width: 100%;
+        position: relative;
+        top: 14em;
+        left: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+    }   
+    .home .image .birthday{
+        position: relative;
+        right: 2.1em;
+        width: 60%;
+        top: -10em;
+    }
+    .home .flag{
+        position: relative;
+        
+        width: 100%;
+        left: -60px;
+    }
+
+    .home .content .btn {
+        width: 68%;
+        font-size: 1.5rem;
+    }
+
+    .sci{
+        position: relative;
+        top: 650px;
+    }
+   .home #copywrite{
+        position: absolute;
+        bottom: -530px;
+        right: 0;
+    }
+}
+@media (max-width:596px ){
+    
+   
+    .home .content{
+        
+        width: 50%;
+    }
+    .home .content h3{
+        
+        font-size: 3.5rem;
+        line-height: 4.4rem;
+    }
+    .home .content h3 span {
+        font-size: 6rem;
+        line-height: 6rem;
+        
+    }
+    .home .content p{
+        padding-right: 60px;
+        padding-top: 2em;
+        width: 100vw;
+    }
+
+    .home .image{
+        width: 100%;
+        position: relative;
+        top: 14em;
+        left: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+    }   
+    .home .image .birthday{
+        position: relative;
+        right: 2.1em;
+        width: 60%;
+        top: -10em;
+    }
+    .home .flag{
+        position: relative;
+        
+        width: 100%;
+        left: -60px;
+    }
+
+    .home .content .btn {
+        width: 79%;
+        font-size: 1.5rem;
+    }
+
+    .sci{
+        position: relative;
+        top: 640px;
+    }
+   .home #copywrite{
+        position: absolute;
+        bottom: -510px;
+        right: 0;
+    }
+}
+
